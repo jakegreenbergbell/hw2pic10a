@@ -41,8 +41,7 @@ int main() {
     cout << "Unit prices: \n";
     cout << setw(widths) << left << "In " + currency + ": "
          << setw(widths) << right << setprecision(2) << fixed << static_cast<double>(quantity / price) << "\n";
-    cout << setw(widths) << left << "In pesos: " <<
-         setw(widths) << right << setprecision(2) << fixed
+    cout << setw(widths) << left << "In pesos: " << setw(widths) << right << setprecision(2) << fixed
          << static_cast<double>(quantity / (price * exchangeRate)) << "\n";
          
     return 0;
